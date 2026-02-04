@@ -1,6 +1,6 @@
 # 台灣捷運票卡資料集 (Taiwan Metro Token)
 
-![project-banner](img/banner.png)
+![project-banner](img/banner-with-ticket.png)
 
 ## 專案介紹
 
