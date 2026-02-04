@@ -8,16 +8,12 @@
 .bashrc
 .inputrc
 .profile
-*.log
-*.eml
-*.html
 *.o
 *.a
 *.d
 *.elf
 *.s19
 *.map
-*.bin
 *.dll
 *.moc.cpp
 *.z
@@ -27,10 +23,8 @@
 *.exe
 *.dsym
 version_pm3.c
-*.json
 *.old
 *.swp
-*.json.bak
 *.pyc
 *.bmp
 originalitysig.csv
