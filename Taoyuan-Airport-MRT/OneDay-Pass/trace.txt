@@ -1,0 +1,55 @@
+
+[+] -----+-----+--------------+---+--------------+----
+[+]  Sec | Blk | key A        |res| key B        |res
+[+] -----+-----+--------------+---+--------------+----
+[+]  000 | 003 | FEFBB7FDE291 | S | 35CD0A2F9E9F | N 
+[+]  001 | 007 | 8C056435B01E | N | 961A67ADAE50 | N 
+[+]  002 | 011 | 2E6722CA0CDA | N | 90A49ED86262 | N 
+[+]  003 | 015 | F3B994DA0571 | N | 989BA3CFEF5D | N 
+[+]  004 | 019 | 822406F3EBA2 | N | 601A808A99CA | N 
+[+]  005 | 023 | D1F6C9EF8E4D | N | 05BEE3B70B94 | N 
+[+]  006 | 027 | FF946D383A0F | N | 9DE442ED13E3 | N 
+[+]  007 | 031 | 8ED8521FE76F | N | BE020E09B4F3 | N 
+[+]  008 | 035 | D2ABC83A48C8 | N | 08C4F12DA684 | N 
+[+]  009 | 039 | 3AD99CE1269F | N | C7E2246E5D82 | N 
+[+]  010 | 043 | 377BC759C159 | N | D984B64EA2F6 | N 
+[+]  011 | 047 | 638307120647 | N | BB8DB72D5CE5 | N 
+[+]  012 | 051 | 0DEB515A016A | N | 2EBBC132F14D | N 
+[+]  013 | 055 | 2B82BD223C8F | N | 05829A5F454F | N 
+[+]  014 | 059 | E1BF346DA450 | N | 90DAEEC39AA5 | N 
+[+]  015 | 063 | 5F94413806D2 | N | 811985102EE7 | N 
+[+] -----+-----+--------------+---+--------------+----
+[=] ( D:Dictionary / S:darkSide / U:User / R:Reused / N:Nested / H:Hardnested / C:statiCnested / A:keyA  )
+
+
+[+] Generating binary key file
+[+] Found keys have been dumped to `/Users/wangzhenghong/hf-mf-916D7C2E-key.bin`
+[=] --[ FFFFFFFFFFFF ]-- has been inserted for unknown keys where res is 0
+[=] Transferring keys to simulator memory ( ok )
+[=] Dumping card content to emulator memory (Cmd Error: 04 can occur)
+[=] downloading card content from emulator memory
+[+] Saved 1024 bytes to binary file `/Users/wangzhenghong/hf-mf-916D7C2E-dump.bin`
+[+] Saved to json file /Users/wangzhenghong/hf-mf-916D7C2E-dump.json
+[=] Autopwn execution time: 115 seconds
+[usb] pm3 --> hf mf info
+
+[=] --- ISO14443-a Information -----------------------------
+[+]  UID: 91 6D 7C 2E 
+[+] ATQA: 00 04
+[+]  SAK: 88 [1]
+
+[=] --- Keys Information
+[+] loaded 2 user keys
+[+] loaded 61 hardcoded keys
+[+] Backdoor key..... A31667A8CEC1
+[+] Block 0.......... 916D7C2EAE88040043291187000A0513 | C)......
+
+[=] --- Fingerprint
+[+] Infineon SLE66R35
+
+[=] --- Magic Tag Information
+[=] <n/a>
+
+[=] --- PRNG Information
+[+] Prng....... weak
+
