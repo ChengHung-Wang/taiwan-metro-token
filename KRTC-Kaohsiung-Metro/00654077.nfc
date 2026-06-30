@@ -1,0 +1,18 @@
+Filetype: Flipper NFC device
+Version: 4
+# Device type can be ISO14443-3A, ISO14443-3B, ISO14443-4A, ISO14443-4B, ISO15693-3, FeliCa, NTAG/Ultralight, Mifare Classic, Mifare Plus, Mifare DESFire, SLIX, ST25TB, EMV
+Device type: FeliCa
+# UID is common for all formats
+UID: 01 19 08 00 51 0C FD 36
+# FeliCa specific data
+Data format version: 1
+Manufacture id: 01 19 08 00 51 0C FD 36
+Manufacture parameter: 00 02 FF FF FF 39 3B FF
+Blocks total: 6
+Blocks read: 6
+Block 0: 00 00 2C 9F EF 8D 00 00 00 00 00 00 00 00 00 00 00 00
+Block 1: 00 00 09 33 00 F5 17 A5 9E AF 48 46 20 4D 31 00 00 0A
+Block 2: 00 00 36 0E 94 B6 69 03 00 5B 18 AF 01 00 00 00 00 00
+Block 3: 00 00 14 00 8E E5 B7 69 00 00 C8 BC 95 BB 63 98 EB CB
+Block 4: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Block 5: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
