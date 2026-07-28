@@ -1,11 +1,11 @@
-# 台灣捷運票卡資料集 (Taiwan Metro Token)
+# 台灣捷運票卡資料集 (Taiwan Metro Token)
 
 ![project-banner](img/banner-with-ticket.png)
 
 
 ## 專案介紹
 
-這個倉庫收集了台北捷運、桃園機場捷運、台中捷運與高雄捷運等系統的各種非接觸式票卡資料，包括單程票、一日票、旅遊票與紀念票等。所有票卡經由 Flipper Zero 或 Proxmark3 裝置讀取後提供 `.nfc`、`.bin`、`.json` 等檔案，方便研究台灣票卡系統的運作與逆向工程。資料僅供研究之用，請勿用於實際乘車或其他商業用途。
+這個倉庫收集了台北捷運、桃園機場捷運、台中捷運與高雄捷運等系統的各種非接觸式票卡資料，包括單程票、一日票、旅遊票與紀念票等。所有票卡經由 Flipper Zero 或 Proxmark3 裝置讀取後提供 `.nfc`、`.bin`、`.json` 等檔案，方便研究台灣票卡系統的運作與逆向工程。資料僅供研究之用，請勿用於實際乘車或其他商業用途。
 
 歡迎對台灣票卡生態、逆向工程有興趣的研究者與開發者參考、分析或貢獻此資料集。
 
@@ -24,9 +24,9 @@
 
 - **Taichung‑MRT (TMRT) 台中捷運**：<br>
 晶片類型: NXP MIFARE Ultralight C (MF0ULC)<br>
-3des key: $${\color{red}49454D4B41455242214E4143554F5946}$$<br>
+3des key: `49454D4B41455242214E4143554F5946`<br>
 熱知識: 這個密碼用 ASCII 轉換後是：BREAKMEIFYOUCAN! (Break Me If You Can!)。~~這密碼非常台中，果然是慶記之都。~~<br>
-包含台中捷運 24hr、48hr、一日票與 2000 萬人次紀念票樣本，每張票以 JSON 格式儲存每個記憶體區塊的十六進位內容。
+包含台中捷運 24hr、48hr、一日票與 2000 萬人次紀念票、2024七夕情人節粉紅單程票樣本，每張票以 JSON 格式儲存每個記憶體區塊的十六進位內容。
 
 - **Taipei‑Metro 台北捷運**：<br>
 晶片類型: NXP MIFARE Ultralight EV1 48bytes (MF0UL1101)<br>
@@ -47,7 +47,7 @@ Key: FFFFFFFF<br>
 
 | 格式 | 來源裝置 | 說明 |
 |------|-----------|------|
-| `.nfc` | Flipper Zero | FeliCa 卡片資料，由 Flipper Zero 讀取後儲存的票卡資訊，內容包含 UID、區塊資料及其他屬性 |
+| `.nfc` | Flipper Zero | FeliCa 卡片資料，由 Flipper Zero 讀取後儲存的票卡資訊，內容包含 UID、區塊資料及其他屬性 |
 | `.bin` | Proxmark3 | 由 Proxmark3 讀取的二進制檔案( `hf mfu dump` ) |
 | `.json` | Proxmark3 | 對應 `.bin` 檔的解析版本，列出卡片 UID、版本資訊以及各記憶體區塊的十六進位值 |
 
