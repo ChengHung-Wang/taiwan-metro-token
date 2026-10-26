@@ -1,0 +1,33 @@
+[usb] pm3 --> hf mfu sim -t 7 -v
+[=] Press pm3 button or <Enter> to abort simulation
+[#] Emulator stopped. Trace length: 343 
+[=] Done!
+[usb] pm3 --> hf mfu list
+[+] Recorded activity ( 343 bytes )
+[=] start = start of start frame. end = end of frame. src = source of transfer.
+[=] ISO14443A - all times are in carrier periods (1/13.56MHz)
+
+      Start |        End | Src | Data (! denotes parity error)                                           | CRC | Annotation
+------------+------------+-----+-------------------------------------------------------------------------+-----+--------------------
+          0 |       1056 | Rdr |26(7)                                                                    |     | REQA
+       2228 |       4596 | Tag |44  00                                                                   |     | 
+     149852 |     150908 | Rdr |26(7)                                                                    |     | REQA
+     152080 |     154448 | Tag |44  00                                                                   |     | 
+     407480 |     408536 | Rdr |26(7)                                                                    |     | REQA
+     409708 |     412076 | Tag |44  00                                                                   |     | 
+     413560 |     416024 | Rdr |93  20                                                                   |     | ANTICOLL
+     417132 |     423020 | Tag |88  04  7E  8B  79                                                       |     | 
+     424612 |     435140 | Rdr |93  70  88  04  7E  8B  79  E4  6D                                       |  ok | SELECT_UID
+     436312 |     439832 | Tag |04  DA  17                                                               |  ok | 
+     441252 |     443716 | Rdr |95  20                                                                   |     | ANTICOLL-2
+     444888 |     450776 | Tag |C2  89  12  91  C8                                                       |     | 
+     452368 |     462832 | Rdr |95  70  C2  89  12  91  C8  4F  72                                       |  ok | SELECT_UID-2
+     464068 |     467652 | Tag |00  FE  51                                                               |  ok | 
+    1403740 |    1408508 | Rdr |30  00  02  A8                                                           |  ok | READBLOCK(0)
+    1412752 |    1433616 | Tag |04  7E  8B  79  C2  89  12  91  C8  48  00  00  00  00  00  00  FE  54   |  ok | 
+    1435384 |    1440088 | Rdr |30  04  26  EE                                                           |  ok | READBLOCK(4)
+    1444588 |    1465388 | Tag |38  40  5A  5D  5B  5D  7A  80  14  00  00  00  D0  4C  8C  26  DC  81   |  ok | 
+    1467172 |    1471876 | Rdr |30  08  4A  24                                                           |  ok | READBLOCK(8)
+    1476312 |    1497112 | Tag |3C  08  06  00  00  00  00  00  00  00  00  00  00  00  00  00  07  84   |  ok | 
+    1498842 |    1503610 | Rdr |30  0C  6E  62                                                           |  ok | READBLOCK(12)
+    1507982 |    1528782 | Tag |00  00  00  00  01  01  00  08  5A  5D  7A  80  1F  2A  70  6D  87  8D   |  ok | 
